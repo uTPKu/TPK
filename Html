@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои ссылки</title>
+    <style>
+        .button-container {
+            display: flex;
+            gap: 10px; /* Отступы между кнопками */
+        }
+    </style>
+</head>
+<body>
+    <h1>Мои ссылки</h1>
+
+    <div class="button-container">
+        <button id="contactsButton">Мои контакты</button>
+        <button id="projectsButton">Мои проекты</button>
+        <button id="aboutButton">Обо мне</button>
+        <button id="extraButton">Дополнительная ссылка</button>
+    </div>
+
+    <script>
+        document.getElementById('contactsButton').addEventListener('click', function() {
+            window.location.href = 'https://example.com/contacts';
+        });
+
+        document.getElementById('projectsButton').addEventListener('click', function() {
+            window.location.href = 'https://example.com/projects';
+        });
+
+        document.getElementById('aboutButton').addEventListener('click', function() {
+            window.location.href = 'https://example.com/about';
+        });
+
+        document.getElementById('extraButton').addEventListener('click', function() {
+            window.location.href = 'https://example.com/extra';
+        });
+    </script>
+</body>
+</html>
