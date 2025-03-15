@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Paragraphs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Useful Links</h2>
+    <a href="https://www.google.com" target="_blank">Google</a> | 
+    <a href="https://www.youtube.com" target="_blank">YouTube</a> | 
+    <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+    
+    <div id="content">
+        <button onclick="addParagraph()">Add New Paragraph</button>
+    </div>
+
+    <script>
+        function addParagraph() {
+            let contentDiv = document.getElementById("content");
+            let newParagraph = document.createElement("p");
+            newParagraph.textContent = "This is a new paragraph.";
+            contentDiv.appendChild(newParagraph);
+        }
+    </script>
+</body>
+</html>
