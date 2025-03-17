@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <script>
+        const translations = {
+            'ru': {
+                'welcome': 'Добро пожаловать!',
+                'content': 'Это русская версия сайта.'
+            },
+            'en': {
+                'welcome': 'Welcome!',
+                'content': 'This is the English version of the site.'
+            }
+        };
+
+        function setLanguage(lang) {
+            document.getElementById('welcome').innerText = translations[lang].welcome;
+            document.getElementById('content').innerText = translations[lang].content;
+        }
+    </script>
+</head>
+<body onload="setLanguage('ru')">
+    <h1 id="welcome"></h1>
+    <p id="content"></p>
+    <button onclick="setLanguage('ru')">Русский</button>
+    <button onclick="setLanguage('en')">English</button>
+</body>
+</html>
